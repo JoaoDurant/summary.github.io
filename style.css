@@ -168,7 +168,7 @@ body{
     font-weight: 800;
 }
 
-#dateSpecificResult{
+.dateSpecificResult{
     font-size: 15px;
     font-weight: 800;
     color: black;
