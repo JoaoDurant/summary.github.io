@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="resultContent">
+            <h2 id="titleResult">
+                Your Result
+            </h2>
+            
+            <div class="result">
+                <div id="resultMain">
+                    <h1 id="numberResult">
+                        76
+                    </h1>
+                </div>
+                <div id="maxResult">
+                    <p>
+                        of 100
+                    </p>
+                </div>
+            </div>
+          
+            <div class="resultMessage">
+                <div id="mainMessage">
+                    <h3 id="congrulationsMessage">
+                        Great
+                    </h3>
+                </div>
+                <div id="descriprionMessage">
+                    <p>
+                        You scored higher than 65% of the people who have taken these tests.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="summaryContent">
+            <h2 id="titleSumary">
+                Summary
+            </h2>
+            <div class="allResults">
+                <div class="resultSpecific" id="resultReaction">
+                    <div class="titelSpecific">
+                        <img class="logoResults" src="results-summary-component-main/assets/images/icon-reaction.svg" alt="ReactionIcon">
+                        <h2 id="titleSpecificResults">
+                            Reaction
+                        </h2>
+                    </div>
+                    <div class="resultDate">
+                        <p id="dateSpecificResult">
+                            80 
+                            <span class="maxSpecificResult">
+                                / 100
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="resultSpecific" id="resultMemory">
+                    <div class="titelSpecific">
+                        <img class="logoResults" src="results-summary-component-main/assets/images/icon-memory.svg" alt="MemoryIcon">
+                        <h2 id="titleSpecificResults">
+                            Memory
+                        </h2>
+                    </div>
+                    <div class="resultDate">
+                        <p id="dateSpecificResult">
+                            92 
+                            <span class="maxSpecificResult">
+                                / 100   
+                            </span>
+                        </p> 
+                    </div>
+                </div>
+                <div class="resultSpecific" id="resultVerbal">
+                    <div class="titelSpecific">
+                        <img class="logoResults" src="results-summary-component-main/assets/images/icon-verbal.svg" alt="VerbalIcon">
+                        <h2 id="titleSpecificResults">
+                            Verbal
+                        </h2>
+                    </div>
+                    <div class="resultDate">
+                        <p id="dateSpecificResult">
+                            61 
+                            <span class="maxSpecificResult">
+                                / 100
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="resultSpecific" id="resultVisual">
+                    <div class="titelSpecific">
+                        <img class="logoResults" src="results-summary-component-main/assets/images/icon-visual.svg" alt="VisualIcon">
+                        <h2 id="titleSpecificResults">
+                            Visual
+                        </h2>
+                    </div>
+                    <div class="resultDate">
+                        <p id="dateSpecificResult">
+                            72 
+                            <span class="maxSpecificResult">
+                                / 100
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          
+            <button class="btn">Continue</button>
+            
+        </div>
+    </div>
+  
+</body>
+</html>

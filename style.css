@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+
+body{
+    background-color: hsl(221, 100%, 96%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainContent{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 2px 1px hsla(0, 1%, 65%, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.resultContent{
+    color: hsl(0, 0%, 100%);
+    min-width: 300px;
+    min-height: 400px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.summaryContent{
+    min-width: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.resultMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleResult{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 19px;
+    padding-bottom: 25px;
+}
+
+#maxResult{
+    color: hsla(0, 0%, 100%, 0.3);
+}
+
+#numberResult{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#congrulationsMessage{
+    padding: 15px 0px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#descriprionMessage{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-weight: 300;
+}
+
+.resultSpecific{
+    min-width: 240px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.titelSpecific{
+    display: flex;
+    gap: 10px;
+}
+
+.allResults{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#titleSumary{
+    width: 240px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+#resultReaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsla(0, 100%, 67%);
+    font-size: 10px;
+    font-weight: 800;
+}
+#resultMemory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsla(39, 100%, 56%);
+    font-size: 10px;
+    font-weight: 800;
+}
+#resultVerbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsla(166, 100%, 37%);
+    font-size: 10px;
+    font-weight: 800;
+}
+#resultVisual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsla(234, 85%, 45%);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+#dateSpecificResult{
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+}
+.maxSpecificResult{
+    color: hsla(0, 0%, 0%, 0.3);
+}
+
+.logoResults{
+    width:15px;
+}
+
+
+@media (max-width: 600px){
+    .mainContent{
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "result"
+            "summary";
+        gap: 20px;
+        align-items: baseline;
+    }
+    .resultContent{
+        padding: 20px;
+    }
+
+    .resultContent{
+        grid-area: result;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        min-height: 350px;
+        
+    }
+    .summaryContent{
+        min-height: 400px;
+        grid-area: summary;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+}
